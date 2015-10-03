@@ -32,8 +32,8 @@ var mybrands;
 var myfname;
 
 var server=http.createServer(app);
-http.listen(process.env.PORT || 3000, function(){
-  console.log('listening on', http.address().port);
+server.listen(process.env.PORT || 3000, function(){
+  
 });
 //server.listen(8800);
 console.log('connection establised');
