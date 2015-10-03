@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<!DOCTYPE HTML>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="/styles/css/bootstrap.css" rel="stylesheet" type="text/css">-->
+<link href="/styles/css/styles.css" rel="stylesheet" type="text/css">
+<link href="/styles/css/image-picker.css" rel="stylesheet" type="text/css">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="/js/jquery-1.11.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="/js/bootstrap.js"></script>
+<!-- scripts for imagepicker -->
+    
+<script type="text/javascript" src="/js/image-picker.js"></script>
+      <script type="text/javascript">
+        "use strict";
+        //wait for the page to be fully loaded
+        window.onload = function() {
+            initialize();
+        }
+    </script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#SelectFit").imagepicker({
+        hide_select: true,
+        show_label: true,
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <!--<nav class="navbar navbar-default">-->
+   <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+             <a class="navbar-brand" id="nav-brand-style" href="#">THE SMART MEN SOCIETY</a>
+         </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="topFixedNavbar1">
+            <ul class="nav navbar-nav profile-navbar-style">
+              <li class="nav-li-style"><a href="#">T-Shirt Style&nbsp&nbsp></a> </li>
+              <li class="nav-li-style"><a href="#">T-Shirt Fit&nbsp&nbsp></a></li>
+              <li class="nav-li-style"><a href="#">Sizes&nbsp&nbsp></a></li>
+              <li class="nav-li-style"><a href="#"> Brands&nbsp&nbsp></a></li>
+              <li class="nav-li-style"><a href="#">My Profile</a></li>
+            </ul>
+            
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    
+<div class="container-fluid ContainerUL">
+
+<p class="formsection-heading">How do you like your t-shirts to fit?</p>
+
+
+<form name="CustomerDataFit" action ="/formfit" method="post" >
+
+
+<!--code for imagepicker-->
+<select name="ChoiceofFit"id="SelectFit">
+  <option data-img-src="/images/carousel-3.jpg" value="1">Show you have been working out</option>
+  <option data-img-src="/images/carousel-3.jpg" value="2">Go classic</option>
+  <option data-img-src="/images/carousel-3.jpg" value="3">Some breathing room please</option>
+ </select>
+ 
+<div class="submitbutton">
+<input type="submit"  class ="buttons-style" value="NEXT" >
+</div> 
+
+
+</form>
+
+</div>
+
+
+</body>
+</html>

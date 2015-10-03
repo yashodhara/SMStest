@@ -80,12 +80,7 @@ app.post("/formstyle",function(req,res){
 
 
 app.post("/formfit",function(req,res){
-	app.get("LogIn/",function(req,res){
-	res.render('indLogIn'); //send the main page to the browser
-	});
-myf
-
-	it=req.body.ChoiceofFit;
+	myfit=req.body.ChoiceofFit;
 	console.log(myfit);
 	res.render('buttonOptions');
 	});
@@ -94,7 +89,7 @@ app.post("/formsizes",function(req,res){
 	mysizes= req.body;
 	console.log(mysizes);
 	res.render('brands');
-});
+	});
 
 
 app.post("/formbrand",function(req,res){
