@@ -32,7 +32,7 @@ var mybrands;
 var myfname;
 
 var server=http.createServer(app);
-server.listen(8800);
+//server.listen(8800);
 console.log('connection establised');
 
 
