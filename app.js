@@ -32,6 +32,9 @@ var mybrands;
 var myfname;
 
 var server=http.createServer(app);
+http.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
 //server.listen(8800);
 console.log('connection establised');
 
@@ -45,7 +48,10 @@ app.set('view engine','ejs'); //set the view engine
 app.set('views',path.join(__dirname, 'views')); //get all the views from ejs
 app.use(express.static(__dirname + '/public'));
 //app.use("/styles",express.static(__dirname,'/styles'));
-//app.use("/js",express.static(__dirname, '/js'));
+//aphttp.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});p.use("/js",exp
+	ress.static(__dirname, '/js'));
 //app.use("/images",express.static(__dirname, '/images'));
 // routes definition starts here
 //when the browers places a GET request the response will be followed
