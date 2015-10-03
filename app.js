@@ -9,7 +9,7 @@ var multer=require('multer');
 var app=express();
 var path=require('path');
 var $= require ('jquery');
-
+var port = process.env.PORT || 8080;
 //-------------------------------------------------------------------
 //connect to MySql DB
 //var mysql=require('mysql');
@@ -31,11 +31,15 @@ var mysizes;
 var mybrands;
 var myfname;
 
-var server=http.createServer(app);
-server.listen(process.env.PORT || 3000, function(){
+//var server=http.createServer(app);
+//server.listen(process.env.PORT || 3000, function(){
   
-});
+//});
 //server.listen(8800);
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
 console.log('connection establised');
 
 
