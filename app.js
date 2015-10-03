@@ -42,16 +42,16 @@ console.log('connection establised');
 //router and event handler
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(multer({ dest: './uploads/' }));
+//app.use(multer({ dest: './uploads/' }));
 app.use(express.static('Node'));
 app.set('view engine','ejs'); //set the view engine
 app.set('views',path.join(__dirname, 'views')); //get all the views from ejs
 app.use(express.static(__dirname + '/public'));
 //app.use("/styles",express.static(__dirname,'/styles'));
 //aphttp.listen(process.env.PORT || 3000, function(){
-  console.log('listening on', http.address().port);
-});p.use("/js",exp
-	ress.static(__dirname, '/js'));
+//  console.log('listening on', http.address().port);
+//});p.use("/js",exp
+//	ress.static(__dirname, '/js'));
 //app.use("/images",express.static(__dirname, '/images'));
 // routes definition starts here
 //when the browers places a GET request the response will be followed
